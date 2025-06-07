@@ -645,12 +645,20 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    import random  # define the random module
+    import os
+    import random
     import string
 
-    S = 10  # number of characters in the string.
-    # call random.choices() string module to find the string in Uppercase + numeric data.
+    # Generate a random secret key
+    S = 10
     ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=S))
-    # chat_sp()
     app.secret_key = str(ran)
-    app.run()
+
+    # Use the port provided by Render
+    port = int(os.environ.get("PORT", 5000))
+    print(f"Running on port {port}")
+    
+    # Run the Flask app with correct host and port
+    app.run(host='0.0.0.0', port=port)
+
+    
