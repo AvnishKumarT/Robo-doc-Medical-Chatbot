@@ -18,5 +18,5 @@ virtualenv venv
 python app.py
 
 
-Medical DataSet present !!
+Medical DataSet available !!
 ---- 
