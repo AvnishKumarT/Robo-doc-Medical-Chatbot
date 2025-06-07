@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "Name": "q",
+            "Age": 45,
+            "Gender": "Male",
+            "Disease": "Alcoholic hepatitis",
+            "Sympts": [
+                "abdominal_pain",
+                "abdominal_pain",
+                "distention_of_abdomen"
+            ]
+        }
+    ]
+}
